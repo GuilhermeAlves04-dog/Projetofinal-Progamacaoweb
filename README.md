@@ -1,4 +1,4 @@
-# Projetofinal-Progamacaoweb#
+# Site do CEEP#
 Como abrir (executar) o site HTML? 
 
 Após criar o código, você vai:
@@ -13,4 +13,6 @@ O site vai abrir no navegador e você pode acessá-lo a vontade e sem complicaç
 
 Qual o objetivo do site?
 
-O objetivo do site é você entrar, explorar e ver oque ele tem a oferecer e (se for do seu interesse), cadastrar- se (pelo Forms), usando seus dados e escolhendo o curso da sua preferência, e ver sobre cada professor que tem na escola
+O objetivo do site é você entrar, explorar e ver oque ele tem a oferecer e (se for do seu interesse), cadastrar- se (pelo Forms), usando seus dados e escolhendo o curso da sua preferência, e ver sobre cada professor que tem na escola.
+
+Grupo: Ana Julia Pereira, Guilherme Alves, Maria Clara Rocha, Maria Luisa e Pyetra Jholy.
