@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores e matérias - CEEP Professora Lourdinha Guerra</title>
+    <style>
+        /* ---------- RESET E BOX MODEL (Aula 09) ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #b82316;  /* ALTERADO: fundo vermelho igual ao título */
+            color: #1e1e2a;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        /* Container centralizado (Flexbox - Aula 10) */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 32px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            padding: 2rem 1.5rem;
+        }
+
+        /* Título (tipografia e Box Model) */
+        h1 {
+            font-family: 'Lora', 'Segoe UI', serif;
+            font-size: 1.9rem;
+            color: #b82316;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #b82316;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* Wrapper para tabela responsiva */
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 2rem;
+            border-radius: 20px;
+        }
+
+        /* Tabela semântica (Aula 05) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            background-color: white;
+        }
+
+        th {
+            background-color: #040d44;
+            color: white;
+            font-weight: 700;
+            padding: 14px 12px;
+            border: 1px solid #2a3a6e;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px 12px;
+            border: 1px solid #e0e4e8;
+            background-color: #ffffff;
+            vertical-align: top;
+        }
+
+        /* Efeito hover nas linhas */
+        tr:hover td {
+            background-color: #fef2f0;
+        }
+
+        tbody tr:nth-child(even) td {
+            background-color: #fafafc;
+        }
+        tbody tr:nth-child(even):hover td {
+            background-color: #fef0ee;
+        }
+
+        /* Botão de voltar (Flexbox) */
+        .link-voltar {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background-color: #b82316;
+            color: white;
+            text-decoration: none;
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.1s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-voltar:hover {
+            background-color: #8e1b10;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 700px) {
+            .container { padding: 1.2rem; }
+            h1 { font-size: 1.5rem; }
+            th, td { padding: 8px 6px; font-size: 0.85rem; }
+            .btn-voltar { padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Professores e as matérias que administram</h1>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr><th>Professores</th><th>Matéria(s)</th></tr>
+            </thead>
+            <tbody>
+                <!-- Adriano Marques (3 matérias) -->
+                <tr><td rowspan="3">Adriano Marques</td><td>Componente Curricular 02</td></tr>
+                <tr><td>Orientação Acadêmica</td></tr>
+                <tr><td>Recomposição Matemática</td></tr>
+
+                <!-- Alessandra Santa (2 matérias) -->
+                <tr><td rowspan="2">Alessandra Santa</td><td>Português</td></tr>
+                <tr><td>Redação</td></tr>
+
+                <!-- Bernardo Rafael -->
+                <tr><td>Bernardo Rafael</td><td>Filosofia</td></tr>
+
+                <!-- Danilo Sarafim -->
+                <tr><td>Danilo Sarafim</td><td>Língua Espanhola</td></tr>
+
+                <!-- Danielle Pereira -->
+                <tr><td>Danielle Pereira</td><td>Educação Especial</td></tr>
+
+                <!-- Elcio Tavares -->
+                <tr><td>Elcio Tavares</td><td>Práticas Experimentais</td></tr>
+
+                <!-- Eliana Maria -->
+                <tr><td>Eliana Maria</td><td>Língua Inglesa</td></tr>
+
+                <!-- Ewerton Richard -->
+                <tr><td>Ewerton Richard</td><td>Química</td></tr>
+
+                <!-- Iane Ohanna -->
+                <tr><td>Iane Ohanna</td><td>Física</td></tr>
+
+                <!-- Izaac Shallon (2 matérias) -->
+                <tr><td rowspan="2">Izaac Shallon</td><td>Banco de Dados</td></tr>
+                <tr><td>Programação Estruturada</td></tr>
+
+                <!-- Kacio Jose Cardoso -->
+                <tr><td>Kacio Jose Cardoso</td><td>Matemática</td></tr>
+
+                <!-- Leidivania Mendes -->
+                <tr><td>Leidivania Mendes</td><td>Recomposição de Português</td></tr>
+
+                <!-- Luciana Tavares -->
+                <tr><td>Luciana Tavares</td><td>Geografia</td></tr>
+
+                <!-- Marcos Venicius -->
+                <tr><td>Marcos Venicius</td><td>Arte</td></tr>
+
+                <!-- Maria Elizangela -->
+                <tr><td>Maria Elizangela</td><td>Sociologia</td></tr>
+
+                <!-- Raphael Bender (2 matérias) -->
+                <tr><td rowspan="2">Raphael Bender</td><td>Componente Curricular 01</td></tr>
+                <tr><td>Metodologia do Trabalho Científico</td></tr>
+
+                <!-- Renan Alves -->
+                <tr><td>Renan Alves</td><td>Programação Web</td></tr>
+
+                <!-- Simone Cassiano -->
+                <tr><td>Simone Cassiano</td><td>Biologia</td></tr>
+
+                <!-- Tatiane Silva -->
+                <tr><td>Tatiane Silva</td><td>Educação Especial</td></tr>
+
+                <!-- Theluzio Klayton -->
+                <tr><td>Theluzio Klayton</td><td>Educação Física</td></tr>
+
+                <!-- Verbena Nidiane -->
+                <tr><td>Verbena Nidiane</td><td>História</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="link-voltar">
+        <a href="PáginainicialCEEP.html" class="btn-voltar">← Retornar à página inicial</a>
+    </div>
+</div>
+</body>
+</html>
